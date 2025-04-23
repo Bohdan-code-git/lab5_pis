@@ -1,0 +1,18 @@
+Ця програма звертається до публічного API Монобанку та виводить курс валют (USD/UAH, EUR/UAH).
+
+ API
+- `GET https://api.monobank.ua/bank/currency`
+
+Параметри не потрібні.
+
+Відповідь:
+```json
+[
+  {
+    "currencyCodeA": 840,
+    "currencyCodeB": 980,
+    "rateBuy": 38.2,
+    "rateSell": 38.9
+  },
+  ...
+]
